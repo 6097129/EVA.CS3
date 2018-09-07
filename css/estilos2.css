@@ -1,0 +1,158 @@
+
+
+body {
+	font-family: Dancing Script;
+	background-color: #02010A;
+	color: white;
+}
+
+#Contenido {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.Encabezado {
+	background-color: #5B7989;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	animation: Animacion1 2s;
+}
+
+@-webkit-keyframes Animacion1 {
+	0% {
+		margin-top: 150%;
+	}
+
+	60% {
+		margin-top: -5%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
+}
+
+#Titulo {
+	text-shadow: 2px 0px #02010A;
+	width: 60%;
+	padding-left: 25px;
+}
+
+.Encabezado div {
+	width: 30%;
+	word-spacing: 15px;
+	padding-top: 30px;
+	text-align: right;
+}
+
+.Encabezado a {
+	color: white;
+	font-size: 20px;
+}
+
+.Encabezado .Principal {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+
+	#Contenido {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#Titulo {
+	text-shadow: 2px 0px #02010A;
+	width: 100%;
+	text-align: center;
+	}
+
+	.Encabezado div {
+	text-align: center;
+	width: 100%;
+	word-spacing:  25px;
+	padding: 5px;
+	padding-top: 0px;
+	padding-bottom: 25px;
+	}
+
+}
+
+.Gallery1 {
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	background-color: #D5C75F;
+	border: 1px;
+	width: 100%;
+}
+
+.Gallery1 div img {
+	width: 250px;
+	border: 2px;
+	box-shadow: 2px 2px red;
+	border-radius: 30px 5px !important;
+}
+
+.Gallery1 div {
+	padding: 25px;
+}
+
+.Blur1 {
+	-webkit-filter: blur (10px);
+	filter: blur(10px);
+}
+
+.Gray1 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.Sepia1 {
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+@media screen and (max-width: 850px) {
+	.Gallery1 div img {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+footer {
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	color: black;
+}
+
+footer div {
+	width: 20%;
+	padding: 20px;
+}
+
+footer div img {
+	width: 15px;
+}
+
+footer div a {
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 850px) {
+	footer div {
+		width: 100%;
+		padding: 10px;
+		text-align: justify;
+	}
+}

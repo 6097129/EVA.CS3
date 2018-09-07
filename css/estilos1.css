@@ -1,0 +1,215 @@
+body {
+	font-family: Dancing Script;
+	background-color: #02010A;
+	color: white;
+}
+
+#Contenido {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.Encabezado {
+	background-color: #5B7989;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	animation: Animacion1 1s;
+}
+
+@-webkit-keyframes Animacion1 {
+	0% {
+		margin-top: 150%;
+	}
+
+	60% {
+		margin-top: -5%;
+	}
+
+	100% {
+		margin-top: 0%;
+	}
+}
+
+#Titulo {
+	text-shadow: 2px 0px #02010A;
+	width: 60%;
+	padding-left: 25px;
+}
+
+.Encabezado div {
+	width: 30%;
+	word-spacing: 15px;
+	padding-top: 30px;
+	text-align: right;
+}
+
+.Encabezado a {
+	color: white;
+	font-size: 20px;
+}
+
+.Encabezado .Principal {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+
+	#Contenido {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#Titulo {
+	text-shadow: 2px 0px #02010A;
+	width: 100%;
+	text-align: center;
+	}
+
+	.Encabezado div {
+	text-align: center;
+	width: 100%;
+	word-spacing:  25px;
+	padding: 5px;
+	padding-top: 0px;
+	padding-bottom: 25px;
+	}
+
+}
+
+
+.PrimeraImagen {
+	background-color: #82C3A6;
+	padding: 20px;
+}
+
+.PrimeraImagen img {
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	display: block;
+	box-shadow: 2px 2px #02010a;
+	border-radius: 30px 5px;
+	color: red;
+	border: 3px solid red;
+}
+
+
+
+.SegundaImagen {
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	background-color: #D5C75F;
+	border: 3px;
+	width: 100%;
+	
+}
+
+.SegundaImagen img {
+	width: 350px;
+	border: 3px;
+	box-shadow: 5px 5px red;
+	border-radius: 30px 5px;
+	color: red;
+	border: -2px solid red;
+	margin: auto;
+}
+
+figure {
+	text-align: center;
+}
+
+.Galeria1 {
+	padding: 10px;
+}
+
+.Galeria2 {
+	padding: 10px;
+}
+
+.Galeria1 img:hover {
+	transform: rotate(360deg);
+	transition-duration: 2s;
+	box-shadow: 2px 2px #82C3A6;
+}
+
+.Galeria2 img:hover {
+	transform:translate(20px, -5px);
+	transition-duration: 1s;
+	box-shadow: 2px 2px #82C3A6;
+}
+
+.SegundaImagen figure a {
+	color: black;
+}
+
+@media screen and (min-width: 601px) and (max-width: 850px) {
+
+	.Galeria1 img {
+		width: 100%;
+		text-align: center;
+		padding: none;
+	}
+
+	.Galeria2 {
+		padding: none;
+	}
+
+	.Galeria2 img {
+		width: 100%;
+		text-align: center;
+	}
+
+	figure figcaption {
+		padding-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.Galeria1 img {
+		width: 100%;
+	}
+
+	.Galeria2 img {
+		width: 100%;
+	}
+}
+
+footer {
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	color: black;
+}
+
+footer div {
+	width: 20%;
+	padding: 20px;
+}
+
+footer div img {
+	width: 15px;
+}
+
+footer div a {
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+	footer div {
+		width: 100%;
+		padding: 20px;
+		text-align: justify;
+	}
+}
